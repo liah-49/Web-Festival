@@ -1,70 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Festival</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="menu"></nav>
     <header>
-        <h1>Lollapalooza</h1>
-        <figure><img src="imágenes/estrella amarilla.svg" alt="es1"></figure>
-        <figure><img src="imágenes/estrella arriba.svg" alt="es2"></figure>
-        <figure><img src="imágenes/estrella abajo.svg" alt="es3"></figure>
-        <figure><img src="imágenes/cintarosa.svg" alt="es4"></figure>
-        <figure><img src="imágenes/cintablanca.svg" alt="es4"></figure>
+        <figure class="lolapalooza"><img src="imágenes/lollapalooza.svg"></figure>
+        <figure  class="estrella-amarilla"><img src="imágenes/estrella amarilla.svg"></figure>
+        <figure class="estrella-arriba"><img src="imágenes/estrella arriba.svg" ></figure>
+        <figure class="estrella-abajo"><img src="imágenes/estrella abajo.svg"></figure>
+        <figure class="cintarosa"><img src="imágenes/cintarosa.svg"></figure>
+        <figure class="cintablanca"><img src="imágenes/cintablanca.svg"></figure>
         <div> <p>EL FESTIVAL MÁS MULTIDISCIPLINARIO.</p></div>
 
     </header>
     <section id="ediciones">
-        <h2>Ediciones</h2>
+      <div class="ediciones-header">
+         <h2>EDICIONES</h2>
+         <div class="text-ediciones">
+             <p>EDICIONES MÁS RECIENTES DEL LOLLAPALOOZA</p>
+          </div>
+        </div>
+     <div class="grid-container">
+            <div class="card card--rosa">
+                 <div class="card-img">
+                     <figure><img src="imágenes/imagenrosa.svg" alt="Lollapalooza 2023"></figure>
+                 </div>
+                    <div class="card-year"><p>2023</p></div>
+                    <div class="card-text"><p>LOREM IPSUM ATEMFBV PDKVNSKBVXSOFVK</p></div>
+                    <div class="card-arrow"><figure><img src="imágenes/flecha.svg" alt=""></figure></div>
+            </div>
 
-        <div> <p>EDICIONES MÁS RECIENTES  DEL LOLLAPALOOZA</p></div>
-        <div class="grid-container">
-            <div class="card">
+            <div class="card card--amarilla">
                 <div class="card-img">
-                     <figure><img src="imágenes/tarjetarosa.svg" alt="trosa"></figure>
+                 <figure><img src="imágenes/imagenamarilla.svg" alt="Lollapalooza 2024"></figure>
                 </div>
-                <div class="card-text">
-                    <p> Clásicas lentejas de toda la vida,
-                   de lo mejorcito que nos ha dado la gastronomía 
-                   abuelil </p>
-                </div>
+                <div class="card-year"><p>2024</p></div>
+                <div class="card-text"><p>LOREM IPSUM ATEMFBV PDKVNSKBVXSOFVK</p></div>
+                <div class="card-arrow"><figure><img src="imágenes/flecha.svg" alt=""></figure></div>
+            </div>
 
-                <div class="card">
-                    <div class="card-img">
-                     <figure><img src="imágenes/tarjetamarilla.svg" alt="barro"></figure>
-                    </div>
-                        <div class="card-text">
-                            <p> Clásicas lentejas de toda la vida,
-                               de lo mejorcito que nos ha dado la gastronomía 
-                              abuelil </p>
-                        </div>
+            <div class="card card--azul">
+                <div class="card-img">
+                    <figure><img src="imágenes/imagenazul.svg" alt="Lollapalooza 2025"></figure>
                 </div>
-                <div class="card">
-                    <div class="card-img">
-                          <figure><img src="imágenes/tarjetazul.svg" alt="abuela"></figure>
-                    </div>
-                    <div class="card-text">
-                            <p> Clásicas lentejas de toda la vida,
-                                 de lo mejorcito que nos ha dado la gastronomía 
-                                 abuelil </p>
-                    </div>
-                </div>  
-            </div>  
+                <div class="card-year"><p>2025</p></div>
+                <div class="card-text"><p>LOREM IPSUM ATEMFBV PDKVNSKBVXSOFVK</p></div>
+                <div class="card-arrow"><figure><img src="imágenes/flecha.svg" alt=""></figure></div>
+            </div>
         </div>     
-
     </section>
+
     <section id="merch">
-        <h2>Merch</h2>
+        <h2>MERCH</h2>
+        <figure><img src="imágenes/edicionesfondo.svg" ></figure>
         <div class="merch-text">
              <p> Clásicas lentejas de toda la vida,
              de lo mejorcito que nos ha dado la gastronomía 
              abuelil </p>
         </div>
-        <figure><img src="imágenes/camisetas.svg" alt="camiseta"></figure>
+        <figure><img src="imágenes/camisetas.svg" ></figure>
     </section>
     
 </body>
