@@ -10,16 +10,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="menu"></nav>
-    <header>
+    <nav id="menu">
+        <ul>
+            <figure class="lolamenu">
+                <a href="#inicio">
+                <img src="imágenes/lollapalooza.svg"></a>
+            </figure>
+            <li>
+                <a href="#ediciones">EDICIONES</a>
+            </li>
+            <li>
+                <a href="#merch">MERCH</a>
+            </li>
+            <li>
+                <a href="#colaboradores">COLABORADORES</a>
+            </li>
+             <li>
+                <a href="#tickets">TICKETS</a>
+            </li>
+        </ul>
+    </nav>
+    <header id="inicio">
         <figure class="lolapalooza"><img src="imágenes/lollapalooza.svg"></figure>
         <figure  class="estrella-amarilla"><img src="imágenes/estrella amarilla.svg"></figure>
         <figure class="estrella-arriba"><img src="imágenes/estrella arriba.svg" ></figure>
         <figure class="estrella-abajo"><img src="imágenes/estrella abajo.svg"></figure>
-        <figure class="cintarosa"><img src="imágenes/cintarosa.svg"></figure>
-        <figure class="cintablanca"><img src="imágenes/cintablanca.svg"></figure>
-        <div> <p>EL FESTIVAL MÁS MULTIDISCIPLINARIO.</p></div>
-
+        <div class="cintas">
+         <figure class="cintarosa"><img src="imágenes/cintarosa.svg"></figure>
+         <figure class="cintablanca"><img src="imágenes/cintablanca.svg"></figure>
+        </div>
+        <div class="textoheader">
+            <p>EL FESTIVAL MÁS MULTIDISCIPLINARIO.</p>
+        </div>
     </header>
     <section id="ediciones">
       <div class="ediciones-header">
@@ -40,7 +62,7 @@
 
             <div class="card card--amarilla">
                 <div class="card-img">
-                 <figure><img src="imágenes/imagenamarilla.svg" alt="Lollapalooza 2024"></figure>
+                <figure><img src="imágenes/imagenamarilla.svg" alt="Lollapalooza 2024"></figure>
                 </div>
                 <div class="card-year"><p>2024</p></div>
                 <div class="card-text"><p>LOREM IPSUM ATEMFBV PDKVNSKBVXSOFVK</p></div>
@@ -66,8 +88,79 @@
              de lo mejorcito que nos ha dado la gastronomía 
              abuelil </p>
         </div>
-        <figure><img src="imágenes/camisetas.svg" ></figure>
+        <a class="merch-vermas" href="#">Ver mas</a>
+
+        <figure class="merch-camisetas"><img src="imágenes/camisetas.svg" ></figure>
+        <figure class="merchbig"><img src="imágenes/starbigmerch.svg"></figure>
+        <figure class="merchpeque"><img src="imágenes/starpequemerch.svg"></figure>
+
     </section>
-    
+    <section id="colaboradores">
+        <h2>COLABORADORES</h2>
+      <div class="cologos">
+         <figure class="colab1"><img src="imágenes/colab1.png"></figure>
+         <figure class="colab2"><img src="imágenes/colab2.png"></figure>
+       </div>
+
+    </section>
+    <section id="tickets">
+        <h2>TICKETS</h2>
+        <figure class="ticketrosa"><img src="imágenes/ticket.svg">
+            <div class="ticket-text">
+             <p>CONSIGUE TUS TICKETS AQUÍ PARA LA PRÓXIMA EDICIÓN ANTES DE QUE SE AGOTEN. </p>
+              <a class="ticket-vermas" href="#">Ver mas</a>
+            </div>
+           
+        </figure>
+        
+    </section>
+    <footer>
+        <figure class="footer-star"><img src="imágenes/estrellafooter.svg"></figure>
+         <figure class="footer-star2"><img src="imágenes/estrellafooter.svg"></figure>
+       <div class="footercol">
+           <h3>SOCIAL</h3>
+           <ul>
+                <li>
+                    <a href="https://www.instagram.com/">INSTAGRAM</a>
+                </li>
+                <li>
+                <a href="https://www.tiktok.com/">TIKTOK</a>
+                </li>
+                <li>
+                    <a href="https://x.com/">X</a>
+                </li> 
+                <li>
+                    <a href="mailto:patricia.ladrondeguevara@alumnos.udit.es"> YOUTUBE</a>
+                </li>  
+           </ul>
+       </div>
+       <div class="footercol">
+           <h3>SECCIONES</h3>
+           <ul>
+                <li>
+                    <a href="#ediciones">EDICIONES</a>
+                </li>
+                <li>
+                    <a href="#merch">MERCH</a>
+                </li>
+                <li>
+                    <a href="#colaboradores">COLABORADORES</a>
+                </li>
+                <li>
+                    <a href="#tickets">TICKETS</a>
+                </li>
+           </ul>
+       </div>
+        
+        <div class="footercorr">
+            <p>
+                CUENTANOS LO QUE PIENSAS
+            </p>
+            <a class="footer-correo" href="mailto:info@lollapalooza.com">CORREO</a>
+            
+        </div>
+
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
