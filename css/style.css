@@ -25,22 +25,54 @@ body {
     color: var(--light-text);
 }
 
-IMG {
+img {
     display: block;
     max-width: 100%;
     height: auto;
 }
-
+/* MAQUETACION NAV */
 #menu {
     position: sticky;
     top: 0;
     z-index: 100;
     background-color: rgb(237, 159, 239);
     box-sizing: border-box;
-    height: 50px;
+    min-height: 65px;
     width: 100%;
     line-height: 1.6;
 }
+#menu a {
+    font-family: Anton, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    color: var(--amarillo);
+    text-decoration: none;
+}
+#menu ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    height: 100%;
+    padding: 0 2rem;
+    list-style: none;
+}
+
+
+#menu img {
+   flex-shrink: 0; 
+   min-width: 100px;
+    width: 13%;
+    padding-left: 2rem;
+    padding-top: 6px;
+}
+.hamburger {
+    padding-top: 1rem;
+    cursor: pointer;
+    display: none;
+
+    
+}
+
 /* MAQUETACIÓN HEADER */
 
 header {
@@ -56,21 +88,72 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width:10%
+    width:20%
 }
 
 .estrella-arriba {
     position: absolute;
     top: 0;
-    padding-top: 6rem;
+    padding-top: 5rem;
     padding-right: 4rem;
     right: 0;
-    width: 10%;
+    width: 20%;
 }
-header h1 {
-    text-align: center;
-    font-size: 4rem;
-    padding: 1rem;
+.estrella-abajo {
+    position: relative;
+    margin: 0 auto;
+    width: 10%;
+ 
+}
+.textoheader {
+ text-align: center;
+ margin-top: 2rem;
+
+ padding-bottom: 4rem;
+}
+.cintas {
+    display: grid;
+    overflow-x: clip;
+}
+
+.cintarosa {
+    position: relative;
+    z-index: 2;
+}
+.cintablanca {
+    position: relative;
+    z-index: 1;
+   transform: rotate(-4deg);
+  margin-top: -235px;
+    width: 120%; 
+    margin-left: -3%;
+}
+/* Animaciones */
+section h2 {
+    overflow: hidden;          /* la máscara que oculta el texto antes de subir */
+}
+
+section h2 span {
+    display: inline-block;
+    transform: translateY(110%);
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+section h2.visible span {
+    transform: translateY(0);
+}
+.estrella-arriba {
+display: block;
+  transform-origin: 49.5% 49%;
+    animation: girar 4s linear infinite;
+}
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* MAQUETACIÓN EDICIONES */
@@ -215,6 +298,23 @@ header h1 {
     display: block;
     width: 100%;
 }
+/* Animaciones */
+#ediciones .card--rosa:hover {
+    overflow: hidden;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+#ediciones .card--amarilla:hover {
+    overflow: hidden;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+#ediciones .card--azul:hover {
+    overflow: hidden;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
 
 /* MAQUETACIÓN MERCH */
 
@@ -234,4 +334,216 @@ header h1 {
     left: 0;
     margin: 0;
    
+}
+.merch-text {
+    position: absolute;
+    top: 35%;
+    left: 2%;
+    width: 34%;
+} 
+.merch-text p {
+    font-size: 1rem;
+    line-height: 1.3;
+     margin-left: 1rem;
+}
+.merch-vermas {
+    font-family: Anton, sans-serif;
+    font-size: 1.2rem;
+    position: absolute;
+    margin-left: 1.5rem;
+    left: 1.5%;
+    top: 45%;
+    width: 29%;
+    padding: 0.6rem 0;
+    text-align: center;
+    color: var(--light-text);
+    text-decoration: none;
+    border: 2px solid var(--light-text);
+    border-radius: 999px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.merch-camisetas {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 61%; 
+}
+.merchbig {
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    width: 15%;
+}
+#merch .merchpeque {
+    position: absolute;
+    top: 54%;
+    left: 48%;
+    width: 8%;
+}
+/* MAQUETACIÓN COLABORADORES */
+#colaboradores h2 {
+    text-align: left;
+    font-family: Anton, sans-serif;
+    font-size: 4rem;
+    letter-spacing: 1.5px;
+    padding-left: 3.5rem;
+    margin-bottom: 4rem;
+   top: 0;
+}
+
+.cologos {
+  display: flex;
+  flex-direction: row;     
+  justify-content: center;  
+  gap: 2px;               
+  padding: 2rem;
+}
+
+.colab1 {
+  width: 80%;            
+}
+.colab2 {
+  width: 79%;            
+}
+/* MAQUETACION TICKETS */
+#tickets {
+    background-color: var(--amarillo);
+}
+#tickets h2 {
+    font-family: Anton, sans-serif;
+    color: #000000;
+    letter-spacing: 1.5px;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    padding-left:  7rem;
+    padding-top: 11.5rem;
+    position: absolute;
+    left: 0;
+    margin: 0;
+     z-index: 2;
+}
+#tickets figure {
+     position: relative;
+    padding: 5rem;
+    width: 80%;
+    display: flex;
+   justify-content: center;
+  margin-left:5rem ;
+}
+.ticket-text {
+    margin-left: 1rem;
+    position: absolute;
+    top: 5rem;
+    bottom: 5rem;
+    left: 38%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    text-align: center;
+    color: #000;
+}
+.ticket-vermas {
+     font-family: Anton, sans-serif;
+    font-size: 1.2rem;
+    margin-top:1rem;
+   margin-left: 8rem;
+    width: 29%;
+    padding: 0.6rem 0;
+    text-align: center;
+    color: #000;
+    text-decoration: none;  
+    border-radius: 999px;
+    background-color:var(--amarillo);
+    margin-bottom: 4rem;
+    
+}
+.ticket-text p {
+margin-left: 8rem;
+padding-top: 4rem;
+}
+
+/* MAQUETACION FOOTER */
+footer {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--azul);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2.5rem 4rem;
+}
+.footercol {
+    display: flex; 
+   flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+footer h3 {
+    font-family: Anton, sans-serif;
+    font-size: 1.4rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: var(--light-text);
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+footer li a {
+    font-size: 0.85rem;
+    color: var(--light-text);
+    text-decoration: none;
+}
+.footer-star {
+position: absolute;
+left: 5%;
+bottom: 15%;
+width: 12%;
+}
+.footer-star2 {
+position: absolute;
+right: 5%;
+bottom: 15%;
+width: 12%;
+}
+.footercorr {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.footercorr p {
+    font-family: Anton, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    text-align: center;
+    max-width: 8rem;
+    color: var(--light-text);
+}
+.footer-correo {
+    font-family: Anton, sans-serif;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: var(--rosa);
+    text-decoration: none;
+}
+/* MEDIA QUERIES */
+/* menú */
+@media (max-width: 690px) {
+    .hamburger {
+        display: block;
+        color: var(--amarillo);
+    }
+    .menulink {
+        display: none;
+    }
+ 
 }

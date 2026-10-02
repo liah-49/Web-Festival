@@ -13,21 +13,29 @@
     <nav id="menu">
         <ul>
             <figure class="lolamenu">
-                <a href="#inicio">
-                <img src="imágenes/lollapalooza.svg"></a>
+                <li>
+                    <a href="#inicio">
+                   <img src="imágenes/lollapalooza.svg"></a>
+                </li>
             </figure>
-            <li>
+            <li class="menulink">
                 <a href="#ediciones">EDICIONES</a>
             </li>
-            <li>
+            <li class="menulink">
                 <a href="#merch">MERCH</a>
             </li>
-            <li>
+            <li class="menulink">
                 <a href="#colaboradores">COLABORADORES</a>
             </li>
-             <li>
+            <li class="menulink">
                 <a href="#tickets">TICKETS</a>
             </li>
+            <li>
+              <div class="hamburger">
+                    <i data-feather="align-center"></i>
+              </div>
+            </li>
+            
         </ul>
     </nav>
     <header id="inicio">
@@ -45,7 +53,7 @@
     </header>
     <section id="ediciones">
       <div class="ediciones-header">
-         <h2>EDICIONES</h2>
+         <h2><span>EDICIONES</span></h2>
          <div class="text-ediciones">
              <p>EDICIONES MÁS RECIENTES DEL LOLLAPALOOZA</p>
           </div>
@@ -162,5 +170,11 @@
 
     </footer>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+
+    
 </body>
 </html>
