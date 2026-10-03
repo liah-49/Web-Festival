@@ -41,6 +41,7 @@ img {
     width: 100%;
     line-height: 1.6;
 }
+
 #menu a {
     font-family: Anton, sans-serif;
     font-size: 1.2rem;
@@ -72,11 +73,15 @@ img {
 
     
 }
+    .menuhbg {
+        display: none;
+    }
 
 /* MAQUETACIÓN HEADER */
 
 header {
     background-color: rgb(25, 132, 255);
+    
 }
 
 .lolapalooza {
@@ -88,16 +93,17 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width:20%
+    width:20%;
+   
 }
 
 .estrella-arriba {
     position: absolute;
-    top: 0;
-    padding-top: 5rem;
-    padding-right: 4rem;
-    right: 0;
-    width: 20%;
+    top: 6rem;
+
+    right: 4rem;
+    width: 12%;
+    
 }
 .estrella-abajo {
     position: relative;
@@ -128,37 +134,10 @@ header {
     width: 120%; 
     margin-left: -3%;
 }
-/* Animaciones */
-section h2 {
-    overflow: hidden;          /* la máscara que oculta el texto antes de subir */
-}
-
-section h2 span {
-    display: inline-block;
-    transform: translateY(110%);
-    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-section h2.visible span {
-    transform: translateY(0);
-}
-.estrella-arriba {
-display: block;
-  transform-origin: 49.5% 49%;
-    animation: girar 4s linear infinite;
-}
-@keyframes girar {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 /* MAQUETACIÓN EDICIONES */
 #ediciones h2 {
-    font-family: Anton, sans-serif;
+    font-family:Anton, sans-serif;
     letter-spacing: 1.5px;
     font-size: 4rem;
     display: flex;
@@ -298,23 +277,6 @@ display: block;
     display: block;
     width: 100%;
 }
-/* Animaciones */
-#ediciones .card--rosa:hover {
-    overflow: hidden;
-    transform: scale(1.2);
-    transition: 0.5s;
-}
-#ediciones .card--amarilla:hover {
-    overflow: hidden;
-    transform: scale(1.2);
-    transition: 0.5s;
-}
-#ediciones .card--azul:hover {
-    overflow: hidden;
-    transform: scale(1.2);
-    transition: 0.5s;
-}
-
 
 /* MAQUETACIÓN MERCH */
 
@@ -418,6 +380,7 @@ display: block;
     flex-direction: column;
     padding-left:  7rem;
     padding-top: 11.5rem;
+     overflow: hidden;
     position: absolute;
     left: 0;
     margin: 0;
@@ -535,8 +498,66 @@ width: 12%;
     color: var(--rosa);
     text-decoration: none;
 }
+/* Animaciones */
+
+.estrella-arriba, .estrella-abajo, .estrella-amarilla, .merchbig, .merchpeque, .footer-star, .footer-star2 {
+display: block;
+  transform-origin: 49.5% 50%;
+    animation: girar 4s linear infinite;
+}
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#ediciones .card--rosa:hover, .card--amarilla:hover, #ediciones .card--azul:hover {
+    overflow: hidden;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.cologos:hover {
+    overflow: hidden;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
 /* MEDIA QUERIES */
 /* menú */
+@media (max-width: 1150px) {
+ .cintablanca {
+        margin-top: -20vw;
+    }
+}
+@media (max-width: 1113px) {
+
+    #merch h2 {
+        padding-top: 14rem;
+        font-size: 4rem;
+    }
+   
+  
+}
+
+@media (max-width: 956px) {
+    .cologos {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .colab2 {
+        padding-right: 1rem;
+    }
+    .colab {
+        width: 75%;
+        padding-left: 4rem;
+    }
+    #colaboradores h2 {
+        text-align: center;
+    }
+}
 @media (max-width: 690px) {
     .hamburger {
         display: block;
@@ -545,5 +566,45 @@ width: 12%;
     .menulink {
         display: none;
     }
+    .menuhbg {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 200px;
+        max-width: 80;
+        padding: 1.5rem;
+        background-color: var(--rosa);
+        transform: translateX(-100%);
+        transition: transform 0.35s ease;
+        z-index: 200;
+    }
  
+    #menu ul > li:last-child {
+        margin-left: auto;
+    }
+    #menu.active .menuhbg {
+     transform: translateX(0); 
+    }
+    .menuhbg ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+        height: auto;
+        padding: 0;
+    }
+
+    .menuhbg-cerrar {
+        align-self: flex-start;
+        margin-bottom: 1.5rem;
+        background: none;
+        border: none;
+        font-family:Anton, sans-serif ;
+        font-size: 1.8rem;
+        color: var(--amarillo);
+        cursor: pointer;
+    }  
 }
