@@ -6,24 +6,27 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-        <script src="js/script.js"></script>
-        <meta name="viewport" content="width=device width, initial-scale=1">
+        <link href="entradas.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+ 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
     </head>
     <body>
         <section>
-            <h1> Compra de entradas</h1>
-            <form onsubmit="return comprar()">
-                <label for="nombre">Nombre:</label>
+            <h1> COMPRA DE ENTRADAS</h1>
+           <h2> ENTRADAS PARA LAS PRÓXIMAS EDICIONES</h2>
+            <form onsubmit  ="return comprar()">
+                <label for="nombre">NOMBRE:</label>
                 <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
                 <input type="email" id="correo" placeholder="Escribe tu correo" required>
                <!-- (para el desplegable) -->
                <label for="exposicion">Exposición:</label>
                <select id="exposicion">
-                <option value="e1">Exposicion 1</option>
-                <option value="e2">Exposicion 2</option>
-                <option value="e3">Exposicion 3</option>
+                <option value="e1">Lollapalooza Barcelona</option>
+                <option value="e2">Lollapalooza Madrid</option>
+                <option value="e3">Lollapalooza Sevilla</option>
                </select>
                <label for="numero">Número de entradas</label>
                <input type="number" id="numero" min="1" max="10"
@@ -45,5 +48,7 @@
                 <button onclick="cerrarVentana()">Aceptar</button>
             </div>
         </div>
+        <figure> <img src="imagentrada/fondoentradas.png" alt="imágenes"></figure>
+        <script src="entradasjs/entradas.js"></script>
     </body>
 </html>
