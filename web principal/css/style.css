@@ -552,7 +552,7 @@ display: block;
         position: absolute;
         margin: 0;
       
-        font-size: 5.5vw;
+     
         z-index: 2;
 
     }
@@ -563,16 +563,22 @@ display: block;
 @media (max-width: 1171px) {
     #tickets h2 {
         left: 0;
+   
         width: 100%;
         align-items: center;
         text-align: center;
         padding-left: 0;
         top: 0;
-            /* antes 11.5rem: ahora queda arriba */
         z-index: 10;
-       
+    }
+  #tickets figure {
+        margin: 0 auto;
+        padding: 7rem 0;
+        width: 70%;
     }
 }
+
+
 
 @media (max-width: 1150px) {
  .cintablanca {
@@ -583,7 +589,7 @@ display: block;
 
     #merch h2 {
         padding-top: 0;
-        top: 24vw;
+        top: 20vw;
     }
    
   
@@ -608,7 +614,6 @@ display: block;
         margin : 2;
     }
    #tickets h2 {
-        position: relativw;
         left: 0;
         width: 100%;
         padding: 0;
@@ -619,19 +624,20 @@ display: block;
  
 
   .ticket-text p {
-        font-size: 1.05vw;        /* antes 10px */
-        margin-left: 6.1vw;       /* antes 4rem */
-        margin-right: -1.53vw;    /* antes -1rem */
-        padding-top: 6.1vw;       /* antes 4rem */
+        font-size: 1.05vw;        
+        margin-left: 6.1vw;       
+         
+        padding-top: 6.1vw;       
     }
    .ticket-vermas {
-        font-size: 1.83vw;        /* antes 1.2rem */
-        margin-top: 1.53vw;       /* antes 1rem */
-        margin-left: 12.2vw;      /* antes 8rem */
-        margin-bottom: 6.1vw;     /* antes 4rem */
-        padding: 0.92vw 0;        /* antes 0.6rem 0 */
+        font-size: 1.8vw;       
+        margin-top: 1.53vw;       
+        margin-left: 12vw;      
+        margin-bottom: 6.1vw;     
+        padding: 0.92vw 0;        
     }
 }
+
 
 @media (max-width: 975px)  {
     #merch p {
@@ -657,6 +663,25 @@ display: block;
         display:none
     }
 }
+@media (max-width: 925px) {
+     .ticket-text p {
+        font-size: 1.05vw;        
+        margin-left: 6.1vw;       
+        margin-right: -1.53vw;    
+        padding-top: 6.1vw;       
+    }
+   .ticket-vermas {
+        font-size: 1.9vw;       
+        margin-top: 1.53vw;       
+        margin-left: 12.2vw;      
+        margin-bottom: 6.1vw;     
+        padding: 0.92vw 0;        
+    }
+    .ticketrosa {
+        width: 30%;
+    }
+} 
+
 @media (max-width: 910px) {
     #merch {
         isolation: isolate;
@@ -689,17 +714,62 @@ display: block;
         margin: 0;
         padding: 0;
     }
-    #merch .merchpeque {
-       top: 29rem;
-       left: 29%;
+    #merch .merchpeque, .merchbig {
+     display: none;
     }
-      #merch .merchbig {
-       top: 25rem;
-       left: 20%;
-    }
+
  #merch .merch-vermas {
     margin-top: 4vw;
  }
+}
+ @media (max-width: 725px) {
+ 
+
+    footer {
+        gap: 5vw;
+        padding: 3.5rem 4vw;
+    }
+
+    .footercol {
+        gap: 2.5vw;
+    }
+
+    footer h3 {
+        font-size: 3.2vw;
+    }
+
+    footer ul {
+        gap: 2.2vw;
+    }
+
+    footer li a {
+        font-size: 2.4vw;
+    }
+
+    .footercorr {
+        gap: 3vw;
+    }
+
+    .footercorr p {
+        font-size: 3.8vw;
+        max-width: 15vw;
+    }
+
+    .footer-correo {
+        font-size: 3.8vw;
+        padding: 2.5vw 4vw;
+    }
+
+}
+
+@media (max-width: 690px) {
+    .ticket-vermas {
+        font-size: 1.vw;       
+        margin-top: 1.53vw;       
+        margin-left: 12.2vw;      
+        margin-bottom: 6.1vw;     
+        padding: 0.92vw 0;        
+    }
 }
 @media (max-width: 690px) {
     .hamburger {
@@ -750,4 +820,54 @@ display: block;
         color: var(--amarillo);
         cursor: pointer;
     }  
+}
+@media (max-width: 500px) {
+
+    #tickets figure {
+        width: 92%;
+        margin: 0 auto;
+        padding: 9rem 0 2rem;
+    }
+
+    #tickets h2 {
+        margin-bottom: 2rem;
+    }
+
+    .ticket-text {
+        top: 5rem;
+        bottom: 2rem;
+        left: 34%;
+        width: 52%;
+        margin-left: 0;
+        gap: 0.6rem;
+    }
+
+    .ticket-text p {
+        margin: 0;
+        padding: 0;
+        font-size: clamp(0.45rem, 2.1vw, 0.7rem);
+        line-height: 1.2;
+    }
+
+    .ticket-vermas {
+        margin: 0;
+        width: auto;
+        padding: 0.4rem 1.4rem;
+        font-size: clamp(0.75rem, 3.6vw, 1.2rem);
+        white-space: nowrap;
+    }
+}
+@media (max-width: 670px) {
+
+     #merch .merch-text p {
+        font-size: 1.6vw;
+    }
+}
+@media (max-width: 420px) {
+#ediciones h2,
+    #merch h2,
+    #colaboradores h2,
+    #tickets h2 {
+        font-size: clamp(2.7rem, 3vw, 2rem);
+    }
 }
