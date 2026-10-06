@@ -34,5 +34,5 @@ function comprar() {
 function cerrarVentana() {
    console.log("-------funcion cerrarVentana")  
    document.getElementById("modal").style.display = "none";
- window.location.href = "/web principal/index.html";
+   window.location.href = "/web principal/index.html";
     }

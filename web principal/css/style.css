@@ -825,8 +825,9 @@ display: block;
 
     #tickets figure {
         width: 92%;
-        margin: 0 auto;
-        padding: 9rem 0 2rem;
+        
+        padding: 9rem 0 1.9rem;
+        margin-right: 4rem;
     }
 
     #tickets h2 {
@@ -834,12 +835,12 @@ display: block;
     }
 
     .ticket-text {
-        top: 5rem;
-        bottom: 2rem;
-        left: 34%;
+        top: 8rem;
+        bottom: 1rem;
         width: 52%;
         margin-left: 0;
         gap: 0.6rem;
+        
     }
 
     .ticket-text p {
@@ -863,11 +864,19 @@ display: block;
         font-size: 1.6vw;
     }
 }
-@media (max-width: 420px) {
+@media (max-width: 450px) {
+        #colaboradores h2 {
+        font-size: clamp(3.5rem, 3vw, 2rem);
+    }
+}
+@media (max-width: 400px) {
+    
 #ediciones h2,
     #merch h2,
-    #colaboradores h2,
-    #tickets h2 {
+    #colaboradores h2
+     {
         font-size: clamp(2.7rem, 3vw, 2rem);
     }
+} #tickets {
+     font-size: clamp(3.5rem, 3vw, 2rem);
 }
