@@ -578,37 +578,6 @@ display: block;
     }
 }
 
-
-
-@media (max-width: 1150px) {
- .cintablanca {
-        margin-top: -21vw;
-    }
-}
-@media (max-width: 1113px) {
-
-    #merch h2 {
-        padding-top: 0;
-        top: 20vw;
-    }
-   
-  
-}
-@media (max-width: 1089px) {
-  .ticket-text p {
-      font-size: 13px;
-    }
-}
-@media (max-width: 1081px) {
-    .footer-star,
-    .footer-star2 {
-        width: 8%;
-        top: 50%;
-        bottom: auto;
-        translate: 0 -50%;
-    }
-   
-}
 @media (max-width: 1171px) {
     #tickets {
         margin : 2;
@@ -637,7 +606,75 @@ display: block;
         padding: 0.92vw 0;        
     }
 }
+@media (max-width: 1170px) {
+  .ticket-text p {
+      font-size: 13px;
+    }
+}
 
+@media (max-width: 1170px) {
+
+    #tickets figure {
+        width: 92%;
+        
+        padding: 9rem 0 1.9rem;
+        margin-right: 4rem;
+    }
+
+    #tickets h2 {
+        margin-bottom: 2rem;
+    }
+
+    .ticket-text {
+        top: 8rem;
+        bottom: 1rem;
+        width: 52%;
+        margin-left: 0;
+        gap: 0.6rem;
+        
+    }
+
+    .ticket-text p {
+        margin-right: 5vw;
+        padding: 0;
+        font-size: clamp(0.45rem, 2.1vw, 0.9rem);
+        line-height: 1.2;
+    }
+
+    .ticket-vermas {
+        margin: 0;
+        width: auto;
+        padding: 0.2rem 1.2rem;
+        font-size: clamp(0.75rem, 3.6vw, 1.2rem);
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 1150px) {
+ .cintablanca {
+        margin-top: -21vw;
+    }
+}
+@media (max-width: 1113px) {
+
+    #merch h2 {
+        padding-top: 0;
+        top: 20vw;
+    }
+   
+  
+}
+
+@media (max-width: 1081px) {
+    .footer-star,
+    .footer-star2 {
+        width: 8%;
+        top: 50%;
+        bottom: auto;
+        translate: 0 -50%;
+    }
+   
+}
 
 @media (max-width: 975px)  {
     #merch p {
@@ -663,24 +700,7 @@ display: block;
         display:none
     }
 }
-@media (max-width: 925px) {
-     .ticket-text p {
-        font-size: 1.05vw;        
-        margin-left: 6.1vw;       
-        margin-right: -1.53vw;    
-        padding-top: 6.1vw;       
-    }
-   .ticket-vermas {
-        font-size: 1.9vw;       
-        margin-top: 1.53vw;       
-        margin-left: 12.2vw;      
-        margin-bottom: 6.1vw;     
-        padding: 0.92vw 0;        
-    }
-    .ticketrosa {
-        width: 30%;
-    }
-} 
+
 
 @media (max-width: 910px) {
     #merch {
@@ -762,15 +782,7 @@ display: block;
 
 }
 
-@media (max-width: 690px) {
-    .ticket-vermas {
-        font-size: 1.vw;       
-        margin-top: 1.53vw;       
-        margin-left: 12.2vw;      
-        margin-bottom: 6.1vw;     
-        padding: 0.92vw 0;        
-    }
-}
+
 @media (max-width: 690px) {
     .hamburger {
         display: block;
@@ -821,49 +833,14 @@ display: block;
         cursor: pointer;
     }  
 }
-@media (max-width: 500px) {
-
-    #tickets figure {
-        width: 92%;
-        
-        padding: 9rem 0 1.9rem;
-        margin-right: 4rem;
-    }
-
-    #tickets h2 {
-        margin-bottom: 2rem;
-    }
-
-    .ticket-text {
-        top: 8rem;
-        bottom: 1rem;
-        width: 52%;
-        margin-left: 0;
-        gap: 0.6rem;
-        
-    }
-
-    .ticket-text p {
-        margin: 0;
-        padding: 0;
-        font-size: clamp(0.45rem, 2.1vw, 0.7rem);
-        line-height: 1.2;
-    }
-
-    .ticket-vermas {
-        margin: 0;
-        width: auto;
-        padding: 0.4rem 1.4rem;
-        font-size: clamp(0.75rem, 3.6vw, 1.2rem);
-        white-space: nowrap;
-    }
-}
 @media (max-width: 670px) {
 
      #merch .merch-text p {
         font-size: 1.6vw;
     }
 }
+
+
 @media (max-width: 450px) {
         #colaboradores h2 {
         font-size: clamp(3.5rem, 3vw, 2rem);
